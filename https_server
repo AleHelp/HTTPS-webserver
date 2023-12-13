@@ -7,7 +7,7 @@ import os
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description='Simple web server over HTTPS.')
-    parser.add_argument('-i', '--ip', type=str, default="127.0.0.1", help='Specify an IP address (default: 127.0.0.1)')
+    parser.add_argument('-i', '--ip', type=str, default="0.0.0.0", help='Specify an IP address (default: 127.0.0.1)')
     parser.add_argument('-p', '--port', type=int, default=443, help='Select a port (default: 443)')
     parser.add_argument('-d', '--directory', type=str, default="./", help='Select a directory (default is the current directory where you start it)')
     parser.add_argument('-c', '--cert', type=str, help='Specify a certificate to use')
