@@ -16,3 +16,6 @@ https_server -c <cert.pem> -k <key.pem> -i <ip address> -p <port> -d <directory 
 ```bash
 https_server --help #parameter to open help list
 ```
+```bash
+openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365 #command to generate a self-signed certificate and the corresponding private key
+```
