@@ -5,7 +5,7 @@ Python script to create a simple HTTPS web server.
 ```bash
 sudo git clone https://github.com/AleHelp/HTTPS-webserver.git
 cd HTTPS-webserver
-chmod +x https_server 
+sudo chmod +x https_server 
 sudo cp ./https_server /usr/bin
 ```
 
