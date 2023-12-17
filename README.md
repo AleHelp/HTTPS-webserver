@@ -10,8 +10,10 @@ sudo cp ./https_server /usr/bin
 ```
 
 ### Usage:
+
+_Command to generate a self-signed certificate and the corresponding private key_
 ```bash
-openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365 #command to generate a self-signed certificate and the corresponding private key
+openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365
 ```
 ```bash
 https_server -c <cert.pem> -k <key.pem> -i <ip address> -p <port> -d <directory to serve> #parameters -i, -p, and -d are not mandatory; default values can be used.
