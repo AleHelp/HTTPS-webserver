@@ -11,11 +11,11 @@ sudo cp ./https_server /usr/bin
 
 ### Usage:
 ```bash
-https_server -c <cert.pem> -k <key.pem> -i <ip address> -p <port> -d <directory to serve> #The parameters -i, -p, and -d are not mandatory; default values can be used.
+openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365 #command to generate a self-signed certificate and the corresponding private key
+```
+```bash
+https_server -c <cert.pem> -k <key.pem> -i <ip address> -p <port> -d <directory to serve> #parameters -i, -p, and -d are not mandatory; default values can be used.
 ```
 ```bash
 https_server --help #parameter to open help list
-```
-```bash
-openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365 #command to generate a self-signed certificate and the corresponding private key
 ```
