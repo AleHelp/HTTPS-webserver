@@ -22,7 +22,7 @@ def serve_http(args):
     print(f"[+] Serving directory at http://{args.ip}:{args.port} from {args.directory}")
     os.chdir(args.directory)
     server_class = HTTPServer
-    server_address = (args.ip, 80)
+    server_address = (args.ip, args.port)
     with server_class(server_address, SimpleHTTPRequestHandler) as httpd:
         try:
             httpd.serve_forever()
