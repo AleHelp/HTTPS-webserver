@@ -1,5 +1,5 @@
 # HTTPS-webserver
-Python script to create a simple HTTPS web server is also possible to use it in HTTP.
+_Python script to create a simple HTTPS web server is also possible to use it in HTTP._
 
 ### Installation:
 ```bash
