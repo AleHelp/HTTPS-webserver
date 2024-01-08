@@ -7,10 +7,10 @@ git clone https://github.com/AleHelp/HTTPS-webserver.git
 cd HTTPS-webserver
 pip3 install -r requirements.txt
 chmod +x https_server.py
-sudo cp ./https_server /usr/bin
+sudo cp ./https_server.py /usr/bin
 ```
 ### Usage:
-```bash
+```
 -h, --help            show this help message and exit
 -l, --list            List all network interfaces
 -i IP, --ip IP        Specify an IP address (default: 0.0.0.0)
