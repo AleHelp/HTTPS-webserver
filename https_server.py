@@ -69,8 +69,12 @@ def main():
         exit(0)
 
     if args.list:
-        list_interfaces()
-
+        if any([args.cert, args.key, args.no_https]):
+            list_interfaces()
+        else:
+            list_interfaces()
+            exit(0) 
+            
     if args.no_https:
         if any([args.cert, args.key]):
             print("[-] Cannot use Certificate and private key in HTTP")
