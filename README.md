@@ -37,3 +37,10 @@ _Command to list network interfaces_
 ```bash
 https_server.py -l
 ```
+
+### Tips:
+
+1) _Powershell may fail to start when using invalid certificates, use this command:_
+```powershell
+[System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$true} 
+```
