@@ -8,6 +8,8 @@ cd HTTPS-webserver
 pip3 install -r requirements.txt
 chmod +x https_server.py
 sudo cp ./https_server.py /usr/bin
+cd ..
+#rm -rf HTTPS-webserver optional command
 ```
 ### Usage:
 ```
